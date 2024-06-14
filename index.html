@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Abban Homepage</title>
+    <link rel="shortcut icon" type="x-icon" href="DAN.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header with personal logo, student ID, and name -->
+    <header>
+        <div class="logo link">
+            <a href="index.html" class="logo link">
+                <img src="da.png" alt="script">
+            </a>
+        </div>
+
+        <div class="student-info">Student ID: BC/ITN/23/149 - Your Name:Daniel Abban</div>
+    </header>
+
+    <!-- Main content sections: Slider, Excerpt, Courses, Calendar, Testimonials -->
+    <div class="slider">
+        <!-- Slider images -->
+        <img src="ttu1.jpeg" alt="Image 1">
+        <img src="ttu2.jpg" alt="Image 2">
+        <img src="ttu3.jpg" alt="Image 3">
+    </div>
+
+    <div class="excerpt">
+        <!-- Excerpt about yourself and career objectives -->
+        <p>About Me: I am passionate about learning and community engagement. I believe in team spirit with that I give
+            my possible best in towards the acheivement of the society.
+        <div class="but"></div> <button><a href="about.html">Read More</a> </button>
+    </div>
+    </p>
+    </div>
+
+    <div class="row">
+        <form action="">
+            <div class="column">
+                <img src="htmls.jpeg" width="100%">
+            </div>
+
+            <div class="column">
+                <img src="csss.jpeg" width="100%">
+            </div>
+
+            <div class="column">
+                <img src="jss.jpeg" width="100%">
+            </div>
+            <p>Currently pursuing courses in HTML, CSS, and JavaScript this semester.</p>
+        </form>
+    </div>
+
+
+
+    <div class="calendar">
+
+        <form action="">
+
+            <h2>Calendar of Activities</h2>
+            <img src="cal.jpeg">
+            <p>Coming soon...</p>
+
+        </form>
+
+    </div>
+
+    <div class="testimonials">
+        <form action="">
+            <h2>Testimonials</h2>
+            <!-- Testimonials content here -->
+            <p>By MTN service: Good and hardworking</p>
+            <p>By Vodafone service: loyalty and integrity</p>
+            <p>By Glo service: Smart</p>
+        </form>
+    </div>
+
+    <div class="more">
+
+        <form action="">
+            <h2>More information</h2>
+            <p><a href="reference.html">Reference page</a></p>
+            <p><a href="gallery.html">Gallery page</a>
+            <p><a href="document.html">Document page</a></p>
+
+        </form>
+
+    </div>
+    <footer>
+        <p>For more information <a href="Contact me.html">Contact Me</a></p>
+        <!-- Social media handles -->
+        <!-- Example: -->
+        <ul class="social-media">
+            <i class="fa-brands fa-facebook"></i>
+            <li><a href="https://www.facebook.com/profile.php?id=100077106235759">Facebook</a></li>
+            <li><i class="fa-brands fa-tiktok"></i><a
+                    href="https://www.tiktok.com/@official_da5?_t=8n7ixVisSAv&_r=1">Tiktok</a></li>
+            <li><i class="fa-brands fa-instagram"></i><a
+                    href="https://www.instagram.com/real_madrid_gh?igsh=NTc4MTIwNjQ2YQ==">Instagram</a></li>
+            <li><i class="fa-brands fa-whatsapp"></i><a href="https://wa.link/5gi7sv">WhatsApp</a></li>
+
+            <!-- Add other social media links -->
+        </ul>
+    </footer>
+
+    <script src="animation.js">
+        // JavaScript code to handle slider functionality
+        const images = document.querySelectorAll('.slider img');
+        let currentImageIndex = 0;
+
+        function showNextImage() {
+            images[currentImageIndex].classList.add('hidden');
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            images[currentImageIndex].classList.remove('hidden');
+        }
+
+        // Automatically move to the next image every 8 seconds
+        setInterval(showNextImage, 8000);
+    </script>
+</body>
+
+</html>

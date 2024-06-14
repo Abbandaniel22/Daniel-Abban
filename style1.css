@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: skyblue;
+}
+
+header {
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    text-align:center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.student-info {
+    font-size: 14px;
+}
+
+.about-me {
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 #999;
+    border-radius: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.about-me h1 {
+    font-size: 24px;
+}
+
+.about-me h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.about-me p {
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.social-media {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-media li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fa-tiktok{
+    color: black;
+}
+
+.fa-instagram{
+    color: red;
+}
+
+.fa-whatsapp{
+    color: green;
+}
+
+
+.fa-tiktok{
+    color: black;
+}
